@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    uses: skacode/org/.github/workflows/ci-cd-template.yml@main
+    uses: skacode/org/.github/workflows/cicd-template.yml@main
     with:
       project_name: "Vulnado"
       docker_image: "skacode/vulnado:latest"
