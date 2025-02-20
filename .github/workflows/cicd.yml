@@ -1,0 +1,15 @@
+name: CI/CD - Vulnado
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    uses: skacode/org/.github/workflows/ci-cd-template.yml@main
+    with:
+      project_name: "Vulnado"
+      docker_image: "skacode/vulnado:latest"
+      working_directory: "." 
+
