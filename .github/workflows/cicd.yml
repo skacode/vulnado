@@ -7,9 +7,9 @@ on:
 
 jobs:
   build:
+    runs-on: self-hosted  # Especificar que se ejecuta en el runner auto hospedado
     uses: skacode/org/.github/workflows/cicd-template.yml@main
     with:
       project_name: "Vulnado"
       docker_image: "skacode/vulnado:latest"
-      working_directory: "." 
-
+      working_directory: "."
