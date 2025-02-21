@@ -1,4 +1,4 @@
-name: CI/CD - Vulnado
+name: CI/CD - Vulnado 
 
 on:
   push:
