@@ -5,6 +5,11 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+  actions: read
+  pull-requests: write
+
 jobs:
   build:
     uses: skacode/org/.github/workflows/cicd-template.yml@main
@@ -12,3 +17,4 @@ jobs:
       project_name: "Vulnado"
       docker_image: "skacode/vulnado:latest"
       working_directory: "."
+    secrets: inherit
