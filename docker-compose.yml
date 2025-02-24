@@ -3,7 +3,7 @@ services:
   vulnado:
     build: .
     ports:
-      - 8080:8080
+      - 9090:9090
     links:
       - db
       - internal_site
