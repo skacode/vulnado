@@ -3,7 +3,7 @@ services:
   vulnado:
     build: .
     ports:
-      - 8080:8080
+      - "8080:8080"
     links:
       - db
       - internal_site
@@ -13,15 +13,15 @@ services:
       - PGHOST=db:5432
       - PGUSER=postgres
     depends_on:
-      - "db"
+      - db
 
   client:
     build: client
     ports:
-      - 1337:80
+      - "1337:80"
 
   db:
-    image: postgres
+    image: postgres:${POSTGRES_VERSION:-latest}
     environment:
       - POSTGRES_PASSWORD=vulnado
       - POSTGRES_DB=vulnado
