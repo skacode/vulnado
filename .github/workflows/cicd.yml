@@ -14,7 +14,7 @@ jobs:
   build:
     uses: skacode/org/.github/workflows/cicd-template.yml@main
     with:
-      project_name: "Vulnado"
+      project_name: "vulnado"
       docker_image: "skacode/vulnado:latest"
       working_directory: "."
     secrets: inherit
