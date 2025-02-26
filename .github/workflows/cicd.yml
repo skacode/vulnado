@@ -17,5 +17,5 @@ jobs:
       project_name: "vulnado"
       docker_image: "skacode/vulnado:latest"
       working_directory: "."
-      app_url: "http://vulnado-client-1:80"
+      app_url: "http://localhost:1337"
     secrets: inherit
