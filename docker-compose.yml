@@ -1,7 +1,7 @@
 version: "3"
 services:
   vulnado:
-    build: .
+    image: "${VULNADO_IMAGE}"
     ports:
       - "8080:8080"
     links:
@@ -21,7 +21,7 @@ services:
       - "1337:80"
 
   db:
-    image: postgres:${POSTGRES_VERSION:-latest}
+    image: "postgres:${POSTGRES_VERSION}"  
     environment:
       - POSTGRES_PASSWORD=vulnado
       - POSTGRES_DB=vulnado
