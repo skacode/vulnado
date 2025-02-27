@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   vulnado:
-    uses: skacode/org2/.github/workflows/cicd-template.yml@main
+    uses: skacode/org/.github/workflows/cicd-template.yml@main
     with:
       project_name: "vulnado"
       docker_image: "skacode/vulnado"
