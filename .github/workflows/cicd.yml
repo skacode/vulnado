@@ -11,7 +11,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  build:
+  checkAndSolve:
     uses: skacode/org/.github/workflows/cicd-template.yml@main
     with:
       project_name: "vulnado"
